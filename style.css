@@ -3,11 +3,13 @@ body
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans';
+    
 }
-/* ------------------------Header---------------------- */
 
+/* ------------------------Header---------------------- */
 #header
 {
+    display: flex;
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('static/2816463.jpg');
     background-attachment: fixed;
@@ -22,27 +24,89 @@ body
     transform: translate(-50%, -50%);
     position: absolute;
 }
+.user-box h2::before
+{
+    position:fixed;
+    transform: translate(-50%, -50%);
+    content: '';
+    color: #fff;
+    animation: h2anim 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+}
+@keyframes h2anim
+{
+    0%{content: 'Loading CV'; color: #fff;}
+    25%{content: ''; color: transparent;}
+    50%{content: 'Loading CV'; color: #fff;}
+    75%{content: ''; color: transparent;}
+    100%{content: 'Loading CV'; color: #fff;}
+}
+
 .user-box img
 {
     border-radius: 50%;
     border: 4px solid #fff; 
     width: 250px;
     height: 250px;
-    /* position: relative;
-    animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: infinite; */
 }
+
 .user-box h1
 {
     color: #fff;
     font-weight: bold;
     margin: 10px;
+    font-size: 3rem;
+    position: relative;
+    overflow: hidden;    
 }
-.user-box p
+
+
+.user-box  p
+{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.user-box span
 {
     color: #fff;
 }
+.user-box span::before
+{
+    content: '';
+    animation: panim infinite 5s;
+    animation-timing-function: ease;
+    
+}
+@keyframes panim
+{
+    0%{content: 'Video Editor';}
+    25%{content: 'Software Developer';}
+    50%{content: 'IT Student';}
+    75%{content: 'Wrestling Coach';}
+    100%{content: 'Freelancer';}
+}
+
+.arrow 
+{
+    bottom: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    animation-name: arrow;
+    animation-duration: 2s;
+    animation-delay: 6s;
+    animation-iteration-count: infinite;
+    
+  }
+  
+  @keyframes arrow {
+    0%   {bottom:0px;}
+    25%  {bottom:50px;}
+    50%  {bottom:0px;}
+    75%  {bottom:50px;}
+    100% {bottom:0px;}
+  }
 
 /* ---------------------------Middel------------------------- */
 #middel
@@ -56,25 +120,6 @@ body
     text-align: center;
 }
 
-.arrow 
-{
-    bottom: 20px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    animation-name: arrow;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    
-  }
-  
-  @keyframes arrow {
-    0%   {bottom:0px;}
-    25%  {bottom:50px;}
-    50%  {bottom:0px;}
-    75%  {bottom:50px;}
-    100% {bottom:0px;}
-  }
 
   .p-skills 
   {
