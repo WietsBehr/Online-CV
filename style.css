@@ -3,6 +3,10 @@ body
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans';
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('static/2816463.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
     
 }
 
@@ -11,10 +15,7 @@ body
 {
     display: flex;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('static/2816463.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    
 }
 
 .user-box
@@ -112,16 +113,33 @@ body
 #middel
 {
     
-    background: linear-gradient(rgba(0,0,0,1), rgba(49, 146, 122, 0.9));
+    /* background: linear-gradient(rgba(0,0,0,1), rgba(49, 146, 122, 0.9)); */
     background-size: cover;
     background-position: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
     color: #fff;
     text-align: center;
 }
+#WhoAmI
+{
+    background:rgba(55, 73, 107, 0.5);
+    border-radius: 25px;
+}
 
+.p-skills 
+{
+    background:rgba(66, 94, 68, 0.5);
+    border-radius: 25px;
+}
 
-  .p-skills 
-  {
-    background: linear-gradient(rgba(0, 0, 0, 0.548), rgba(43, 92, 80, 0.9));
-  }
+  /*---------------------------Footer-------------------------*/
+
+#footer
+{
+    background-color: rgb(83, 80, 80);
+}
+
+#footer img:hover
+{
+    filter: invert(1);
+}
