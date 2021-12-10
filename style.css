@@ -126,10 +126,27 @@ body
     border-radius: 25px;
 }
 
+#WhoAmI :hover
+{
+    transform:scale(1.1);
+}
+
+
 .p-skills 
 {
     background:rgba(66, 94, 68, 0.5);
     border-radius: 25px;
+}
+
+.mywork
+{
+    background:rgba(114, 53, 122, 0.5);
+    border-radius: 25px;
+}
+
+#wdev img:hover
+{
+    transform: scale(3);
 }
 
   /*---------------------------Footer-------------------------*/
