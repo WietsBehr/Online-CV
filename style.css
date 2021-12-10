@@ -149,11 +149,17 @@ body
     transform: scale(3);
 }
 
+.history
+{
+    background:rgba(119, 53, 45, 0.5);
+    border-radius: 25px;
+}
+
   /*---------------------------Footer-------------------------*/
 
 #footer
 {
-    background-color: rgb(83, 80, 80);
+    background-color: rgb(83, 80, 80, 0.75);
 }
 
 #footer img:hover
